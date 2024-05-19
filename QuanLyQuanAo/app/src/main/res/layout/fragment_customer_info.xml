@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CustomerInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Mã KH: "
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtMaKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Tên KH: "
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtTenKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:background="@drawable/edit_text_no_border" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="SĐT: "
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtSDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:background="@drawable/edit_text_no_border" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: "
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:background="@drawable/edit_text_no_border" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:textSize="25dp"/>
+    </LinearLayout>
+</FrameLayout>

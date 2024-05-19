@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtMaHDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textStyle="italic"
+            android:tooltipText="Mã hóa đơn"
+            android:text="HDB01"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/txtTongTienHDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="500,000"
+            android:tooltipText="Tổng hóa đơn"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtPhuongThucTT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Tiền mặt"
+            android:textAlignment="textEnd"
+            android:tooltipText="Phương thức thanh toán"
+            android:textStyle="italic"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtCreatedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:tooltipText="Ngày tạo"
+            android:text="2024-05-15 00:00:00"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
